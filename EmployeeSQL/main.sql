@@ -101,12 +101,26 @@ and lower(employees.last_name) like 'b%'
 select * from hercules_b
 
 -- List all employees in the Sales department, including their employee number, last name, first name, and department name.
+create view sales_employees as 
+select * from employee_dept
+where lower(dept_name)='sales'
 
-
+select * from sales_employees
 
 -- List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
+create view sales_dev_employees as 
+select * from employee_dept
+where lower(dept_name)='sales'
+or lower(dept_name)='development'
+
+select * from sales_dev_employees
 
 
 -- In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+create view last_name_freq as 
+select count(e.first_name),e.last_name from employees as e
+group by last_name
+order by count(e.first_name) desc
 
+select * from last_name_freq
