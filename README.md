@@ -1,15 +1,10 @@
 # SQL Challenge
 
 ## Overview
-It is a beautiful spring day, and it is two weeks since you have been hired as a new data engineer at Pewlett Hackard. Your first major task is a research project on employees of the corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
+As a new data engineer at Pewlett Hackard, your first major task is a research project on employees of the corporation from the 1980s and 1990s. 
+Unfortunately all that remain of the data set are a number of CSVs. 
 
-In this assignment, you will design the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions about the data. In other words, you will perform:
-
-1. Data Engineering
-
-3. Data Analysis
-
-Note: You may hear the term "Data Modeling" in place of "Data Engineering," but they are the same terms. Data Engineering is the more modern wording instead of Data Modeling.
+The following SQL scripts design the tables used to hold the data from the CSVs, import the CSVs into the SQL database, performing Data Engineering and Data Analysis. 
 
 ## File Structure
 
@@ -32,7 +27,10 @@ Note: You may hear the term "Data Modeling" in place of "Data Engineering," but 
 * DataQueries.sql is a `.sql` file of the queries.
 
 ## Running the Script
-
+- Requirements
+    - PostgresSQL
+    - PGAdmin
+    
 ## Output and Observations
 1. Employee Details Table: employee number, last name, first name, sex, and salary.
 
@@ -49,4 +47,3 @@ Note: You may hear the term "Data Modeling" in place of "Data Engineering," but 
 7. Sales and Development Department Employee Table:employee number, last name, first name, and department name.
 
 8. Employee Last Name Frequency Table: In descending order, the frequency count of employee last names.
-
